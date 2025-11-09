@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio website of Parag - Web Developer, Designer, Java Programmer, AI Enthusiast.">
+  <meta name="author" content="Parag">
+  <title>Parag's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Overlay & Sidebar -->
+  <div id="overlay" class="overlay"></div>
+  <div id="sidebar" class="sidebar">
+    <button id="closeSidebarBtn" class="close-btn">&times;</button>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#projects">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="music.html">Music Player</a>
+      <a href="game.html">Mini Game</a>
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="left">
+        <button id="openSidebarBtn" class="toggle-btn">☰</button>
+        <h2>Parag's Portfolio</h2>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#home" onclick="showSection('home')">Home</a></li>
+          <li><a href="#about" onclick="showSection('about')">About</a></li>
+          <li><a href="contact.html" onclick="showSection('contact')">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="firstSection" id="home">
+      <div class="leftSection">
+        Hi, My name is <span class="purple">Parag</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+      </div>
+      <div class="rightSection" id="glow">
+        <img src="images/img1.jpg" alt="Parag's profile image">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Image Showcase -->
+    <div class="images">
+      <div class="img1"><img src="images/img2.jpg" alt="Background image 1"></div>
+      <div class="img2"><img src="images/img3.jpg" alt="Background image 2"></div>
+      <div class="img3"><img src="images/img4.jpg" alt="Background image 3"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="website-footer">
+    © 2025 Parag | Built with ❤️
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

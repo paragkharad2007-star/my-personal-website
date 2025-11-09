@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Parag Kharad</title>
+  <link rel="stylesheet" href="resume.css">
+  <script defer src="resume.js"></script>
+</head>
+<body>
+  <div class="animated-gradient"></div>
+  <canvas id="star-canvas"></canvas>
+  <div class="bubbles">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="resume-container">
+    <!-- Header -->
+    <header class="resume-header">
+      <img src="album/album2.jpg" alt="Profile Picture" class="profile-pic">
+      <h1>Parag Kharad</h1>
+      <span id="element"></span>
+    </header>
+    <hr>
+
+    <!-- Contact -->
+    <section class="resume-section">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:paragkharad@outlook.com">paragkharad@outlook.com</a></li>
+        <li>Phone: 7768849103</li>
+        <li>LinkedIn: --------</li>
+      </ul>
+    </section>
+    <hr>
+
+    <!-- Skills -->
+    <section class="resume-section">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Java & DSA</li>
+        <li>C Programming</li>
+        <li>C++ Programming</li>
+        <li>Python Programming</li>
+        <li>Git and Github</li>
+      </ul>
+    </section>
+    <hr>
+
+    <!-- Education -->
+    <section class="resume-section">
+      <h2>Education</h2>
+      <p>B.Tech CSE AIML (College Name) | 2025</p>
+    </section>
+    <hr>
+
+    <!-- Projects -->
+    <section class="resume-section">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="/index.html">Portfolio Website</a></li>
+        <li>AI Assistant using Java and DSA</li>
+        <li>Weather App with API</li>
+        <li><a href="/music.html">Music Player</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    new Typed('#element', {
+      strings: ['Frontend Developer', 'Web Designer', 'Java Programmer', 'Web Developer', 'AI Enthusiast'],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+  </script>
+</body>
+</html>
